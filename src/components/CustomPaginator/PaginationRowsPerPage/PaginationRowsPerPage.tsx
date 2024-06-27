@@ -8,6 +8,7 @@ const PaginationRowsPerPage = ({
   selectedValue,
   total,
   onButtonClick,
+  setCurrentPage,
 }: PaginatorButtonsProps) => {
   return (
     <Stack direction={'row'} alignItems={'center'} spacing={'10px'}>
@@ -19,6 +20,7 @@ const PaginationRowsPerPage = ({
             selected={selectedValue === value}
             onClick={() => {
               onButtonClick(value);
+              setCurrentPage(1);
             }}
           >
             {value}

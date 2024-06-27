@@ -8,6 +8,7 @@ function CustomPaginator({
   currentPage,
   totalRows,
   elementPerPage,
+  setCurrentPage,
   setElementPerPage,
   handleNextPage,
   handlePrevPage,
@@ -27,8 +28,9 @@ function CustomPaginator({
     >
       <PaginationRowsPerPage
         selectedValue={elementPerPage}
-        onButtonClick={setElementPerPage}
         total={totalRows}
+        setCurrentPage={setCurrentPage}
+        onButtonClick={setElementPerPage}
       />
       <Stack direction={'row'} spacing={1.5}>
         <PaginatorButtonStyle
