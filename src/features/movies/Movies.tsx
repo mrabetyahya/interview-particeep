@@ -93,6 +93,7 @@ function Movies() {
         elementPerPage={elementPerPage}
         totalRows={totalRows}
         setElementPerPage={setElementPerPage}
+        setCurrentPage={setCurrentPage}
         handleNextPage={handleNextPage}
         handlePrevPage={handlePrevPage}
       />
