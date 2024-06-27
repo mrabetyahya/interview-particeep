@@ -23,7 +23,7 @@ export const TitleStyle = styled.p`
   font-family: Inter;
   font-size: 58px;
   font-weight: 800;
-  line-height: 58px;
   text-align: left;
   color: #14171f;
+  margin: 0px;
 `;
